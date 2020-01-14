@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.chutiaap.lab_1.user_rep"
+    android:background="@mipmap/ic_launcher_background_papiro">
+
+    <RelativeLayout
+        android:id="@+id/UserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="296dp">
+
+        <ImageView
+            android:id="@+id/thisImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:layout_toStartOf="@+id/thisRating"
+            android:adjustViewBounds="true"
+            android:background="@color/Ivory"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            app:srcCompat="@drawable/user_id2" />
+
+        <TextView
+            android:id="@+id/thisName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/thisImage"
+            android:layout_centerHorizontal="true"
+            android:text="Name and Surname"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thisDescription"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/thisName"
+            android:layout_alignStart="@+id/thisName"
+            android:layout_below="@id/thisName"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thisAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/thisName"
+            android:layout_alignStart="@+id/thisName"
+            android:layout_below="@id/thisDescription"
+            android:layout_marginTop="20dp"
+            android:text="Address"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/thisPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/thisName"
+            android:layout_alignStart="@+id/thisName"
+            android:layout_below="@id/thisAddress"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Phone"
+            android:textColor="@color/text_color"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/thisRating"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/thisPhone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rating_bar"
+            android:isIndicator="true"
+            android:rating="0" />
+
+        <ImageButton
+            android:id="@+id/EditImageButton"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/thisImage"
+            android:layout_marginEnd="61dp"
+            android:background="@color/PapayaWhip"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/LibraryImageButton"
+            android:layout_width="57dp"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="89dp"
+            android:layout_marginStart="84dp"
+            android:background="@color/PapayaWhip"
+            app:srcCompat="@mipmap/ic_library" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Reviews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/revTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Reviews"
+                android:textColor="@color/text_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/reviewList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/Ivory"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:dividerHeight="4px"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher_background_main">
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="147dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:background="@drawable/button"
+        android:elevation="6dp"
+        android:text="SHOW_PROFILE" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="147dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:elevation="6dp"
+        android:layout_below="@id/button1"
+        android:layout_alignLeft="@id/button1"
+        android:layout_alignStart="@id/button1"
+        android:layout_marginTop="16dp"
+        android:text="INSERT_BOOK" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="147dp"
+        android:layout_height="35dp"
+        android:background="@drawable/button"
+        android:elevation="6dp"
+        android:layout_below="@id/button2"
+        android:layout_alignLeft="@id/button1"
+        android:layout_alignStart="@id/button1"
+        android:layout_marginTop="16dp"
+        android:text="SEARCH" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="147dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/button3"
+        android:layout_alignLeft="@id/button3"
+        android:layout_below="@id/button3"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:elevation="6dp"
+        android:text="CHAT" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button4"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:backgroundTint="@color/button_text"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <ImageView
+        android:id="@+id/flagView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_marginTop="25dp"
+        android:maxHeight="20dp"
+        android:maxWidth="20dp"
+        app:srcCompat="@drawable/uk"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_launcher_background_main">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/language_cr" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="147dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="119dp"
+        android:layout_marginStart="51dp"
+        android:background="@drawable/button"
+        android:elevation="6dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="147dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/button1"
+        android:layout_alignLeft="@id/button1"
+        android:layout_alignTop="@+id/imageButton"
+        android:background="@drawable/button"
+        android:elevation="6dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="147dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/button1"
+        android:layout_marginEnd="192dp"
+        android:layout_marginTop="-119dp"
+        android:background="@drawable/button"
+        android:elevation="6dp"
+        android:text="Button" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="147dp"
+        android:layout_height="35dp"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:background="@drawable/button"
+        android:elevation="6dp"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="59dp"
+        android:layout_height="57dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="55dp"
+        android:background="@color/button_text"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+
+</RelativeLayout>

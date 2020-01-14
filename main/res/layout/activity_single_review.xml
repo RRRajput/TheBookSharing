@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chutiaap.lab_1.singleReview"
+    android:background="@mipmap/ic_launcher_background_papiro">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="149dp">
+
+        <TextView
+            android:id="@+id/revUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_toEndOf="@+id/revImage"
+            android:layout_toRightOf="@+id/revImage"
+            android:maxWidth="150dp"
+            android:text="TextView"
+            android:textColor="@color/text_color"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/revImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            app:srcCompat="@drawable/user_id2" />
+
+        <ImageView
+            android:id="@+id/flagView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/it" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/reviewtext"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="@color/text_color" />
+
+        <RatingBar
+            android:id="@+id/reviewrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reviewtext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+           />
+
+        <Button
+            android:id="@+id/reviewsubmit"
+            android:layout_width="147dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button"
+            android:elevation="6dp"
+            android:layout_below="@+id/reviewrating"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="Button" />
+    </RelativeLayout>
+</LinearLayout>

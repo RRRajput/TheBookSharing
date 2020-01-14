@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.chutiaap.lab_1.ChatMessage"
+    android:orientation="vertical"
+    android:background="@color/Ivory"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DestinationID"
+        >
+
+        <TextView
+            android:id="@+id/toID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="TextView"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="Switch" />
+
+        <Spinner
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/MessagesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DestinationID"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/SendMessage"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <ListView
+            android:id="@+id/Messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:transcriptMode="alwaysScroll"
+            android:divider="@color/Ivory" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/SendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:layout_marginBottom="16dp"
+        >
+
+        <ImageView
+            android:id="@+id/SendMessageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_alignBottom="@+id/TypedMessage"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/button_text"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+        <EditText
+            android:id="@+id/TypedMessage"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginStart="0dp"
+            android:layout_toLeftOf="@id/SendMessageButton"
+            android:ems="14"
+            android:inputType="textPersonName"
+            android:background="@drawable/text_message"
+
+            android:text="Name" />
+
+    </RelativeLayout>
+</RelativeLayout>

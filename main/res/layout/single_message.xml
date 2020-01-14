@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Ivory"
+  >
+
+
+    <TextView
+        android:id="@+id/messageTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/messageFrom"
+        android:layout_alignBottom="@+id/messageFrom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/text_view_chat_to"
+        android:text="TextView"
+        android:layout_marginTop="16dp"
+        android:textAlignment="gravity"
+        android:textColor="@color/text_color"
+        android:layout_marginLeft="16dp"
+        android:textSize="15dp"
+        android:maxWidth="250dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignLeft="@id/messageTo"
+        android:layout_below="@+id/messageTo"
+        android:layout_marginLeft="20dp"
+        android:background="@color/Ivory"
+        android:text="TextView"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/text_color"
+        android:textSize="8dp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/messageFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_view_chat_from"
+        android:text="TextView"
+        android:textColor="@color/text_color"
+        android:textSize="15dp"
+        android:maxWidth="250dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timefrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@id/messageFrom"
+        android:layout_alignEnd="@id/messageFrom"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/messageFrom"
+        android:textColor="@color/text_color"
+        android:background="@color/Ivory"
+        android:textStyle="italic"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="8dp"
+        android:text="TextView" />
+</RelativeLayout>

@@ -9,8 +9,9 @@ A book sharing application was developed with the scope of helping people share 
 The app was majorly developed in Java using Android Studio. Only one functionality within the application was developed using Kotlin.
 
 Developed by:
-Annalisa Pelati
-Stefania Titone
+Annalisa Pelati,
+Stefania Titone,
 Rehan Razzaque Rajput
+
 
 The project was part of a course at Politecnico di Torino. The project was developed by students who had never developed an application before. The scope of developing this application was mainly to learn android app development on-the-go. 
